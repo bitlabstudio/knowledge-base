@@ -84,6 +84,8 @@ export default App
 import React, { Component } from 'react'
 import glamorous from 'glamorous'
 
+// This is not our real component. This is just one styled div in our real
+// component.
 const Container = glamorous.div(props => {
   fontFamily: props.theme.fontSerif,
   fontSize: props.theme.fontSizeP,
@@ -114,15 +116,17 @@ props => {
 // Make sure to give each glamorous component a displayName:
 Container.displayName = 'path.to.this.file.Container'
 
+// This is another div in our real component
 const Box = glamorous.div({
   color: 'green'
 })
 Box.displayName = 'path.to.this.file.Box'
 
+// Now our real component composes the styled glamorous components
 class SomeComponent extends Component {
   render() {
     return (
-      <Container extraProp={true} variant="blue">
+      <Container extraProp={true} variant="blue" css={{ display: 'flex'}}>
         {/* Don't create glamorous containers for simple divs that only deal
             with layout. It's easier to understand the layout when you see
             the divs and their flex/width/height/display/position styles right here.
