@@ -12,4 +12,4 @@ patterns that we use on a day-to-day basis.
 
 * Javascript
   * ReactJS
-    * [javascript/react-js/hello-world.md](Hello World)
+    * [Hello World](javascript/react-js/hello-world.md)
