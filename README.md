@@ -13,3 +13,4 @@ patterns that we use on a day-to-day basis.
 * Javascript
   * ReactJS
     * [Hello World](javascript/react-js/hello-world.md)
+    * [A React Component](javascript/react-js/a-react-component.md)
