@@ -4,6 +4,7 @@ In this file:
 
 * [Setup](#setup)
 * [Usage](#usage)
+  * [A component with layout and styles](#a-component-with-layout-and-styles)
 
 ## Setup
 
@@ -75,3 +76,71 @@ export default App
 ```
 
 ## Usage
+
+### A component with layout and styles
+
+```js
+// file SomeComponent.js
+import React, { Component } from 'react'
+import glamorous from 'glamorous'
+
+const Container = glamorous.div(props => {
+  fontFamily: props.theme.fontSerif,
+  fontSize: props.theme.fontSizeP,
+  // if you have a prop that changes the value of one style, do it like this:
+  opacity: props.extraProp ? 1 : 0.5,
+  // media queries work like expected:
+  '@media(max-width: 767px)': {
+    color: 'white',
+  }
+  // if this component might have a <Link> component in it's children, this is
+  // a nice trick to style the link component as well
+  '> a': {
+    color: 'inherit'
+  }
+},
+// if you have a prop, that changes the value of many styles, doing all kinds
+// of `props.value ? 'foo' : 'bar'` will become difficult to understand.
+// Better add a new style object that overrides the first one:
+props => {
+  if (props.variant === 'blue') {
+    return {
+      color: 'blue',
+      backgroundColor: 'black',
+    }
+  }
+  return undefined
+})
+// Make sure to give each glamorous component a displayName:
+Container.displayName = 'path.to.this.file.Container'
+
+const Box = glamorous.div({
+  color: 'green'
+})
+Box.displayName = 'path.to.this.file.Box'
+
+class SomeComponent extends Component {
+  render() {
+    return (
+      <Container extraProp={true} variant="blue">
+        {/* Don't create glamorous containers for simple divs that only deal
+            with layout. It's easier to understand the layout when you see
+            the divs and their flex/width/height/display/position styles right here.
+        */}
+        <div style={{ flex: 1, flexDirection: 'column' }}>
+          Your app markup here...
+        </div>
+        {/* If you have a component that has layout styles which should be
+            visible right here, but ALSO lots of other fancy styles, then
+            you can turn it into a glamorous component, but add the layout
+            styles here via the css prop (which overrides all other existing
+            styles)
+        */}
+        <Box css={{ flex: 2 }} />
+      </Container>
+    )
+  }
+}
+
+export default SomeComponent
+```
