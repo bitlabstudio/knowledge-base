@@ -40,6 +40,8 @@ class ComponentName extends Component {
   componentWillUpdate(nextProps, nextState) { }
   // render() happens now
   componentDidUpdate(prevProps, prevState) { }
+  // if we registered event listeners or timers, we must unregister them here!
+  componentWillUnmount() { } 
 
   // now implement all other kind of functions and handlers that are needed,
   // ordered by alphabet
