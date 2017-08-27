@@ -4,6 +4,7 @@ In this file:
 
 * [Setup](#setup)
 * [Usage](#usage)
+  * [Accessing route params](#accessing-route-params)
   * [Using the Link component](#using-the-link-component)
   * [Programmatically changing the route](#programmatically-changing-the-route)
 
@@ -59,6 +60,11 @@ export default App
 ```
 
 ## Usage
+
+### Accessing route params
+
+When a route has dynamic parameters (i.e. `/blog/:slug/`), you can access
+the parameter inside the component via `this.props.match.params.slug`.
 
 ### Using the Link component
 

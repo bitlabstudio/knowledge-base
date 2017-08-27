@@ -16,3 +16,4 @@ patterns that we use on a day-to-day basis.
     * [A React Component](javascript/react-js/a-react-component.md)
     * [Styling Components](javascript/react-js/styling-components.md)
     * [React Router](javascript/react-js/react-router.md)
+    * [React Apollo](javascript/react-js/react-apollo.md)
