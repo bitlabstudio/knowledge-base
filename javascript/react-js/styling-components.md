@@ -86,7 +86,7 @@ import glamorous from 'glamorous'
 
 // This is not our real component. This is just one styled div in our real
 // component.
-const Container = glamorous.div(props => {
+const Container = glamorous.div(props => ({
   fontFamily: props.theme.fontSerif,
   fontSize: props.theme.fontSizeP,
   // if you have a prop that changes the value of one style, do it like this:
@@ -100,7 +100,7 @@ const Container = glamorous.div(props => {
   '> a': {
     color: 'inherit'
   }
-},
+}),
 // if you have a prop, that changes the value of many styles, doing all kinds
 // of `props.value ? 'foo' : 'bar'` will become difficult to understand.
 // Better add a new style object that overrides the first one:
