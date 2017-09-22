@@ -10,6 +10,8 @@ patterns that we use on a day-to-day basis.
 
 # Index
 
+* HTML & CSS
+  * [Modals](html-css/modals.md)
 * Javascript
   * ReactJS
     * [Hello World](javascript/react-js/hello-world.md)

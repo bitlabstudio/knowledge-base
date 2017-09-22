@@ -181,7 +181,7 @@ mutation UpdateUserProfile($firstName: String!, $lastName: String!) {
 class UserProfileForm extends Component {
   handleSubmit(e) {
     e.preventDefault()
-    this.mutate({variables: {firstName: 'Test', lastName: 'Test'}}).then(res =>
+    this.props.mutate({variables: {firstName: 'Test', lastName: 'Test'}}).then(res =>
       if (res.data.updateUserProfile.status === 200) {
         // do something for success
       }
