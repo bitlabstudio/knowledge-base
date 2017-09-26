@@ -1,6 +1,4 @@
-# Miscellaneous
-
-Some tips and tricks that we need to archive under better folders/files, later
+# Tooling > MacOS
 
 ## Increase keyboard speed in macOS:
 
@@ -8,4 +6,4 @@ Some tips and tricks that we need to archive under better folders/files, later
 # see https://apple.stackexchange.com/a/83923
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
-```
+`

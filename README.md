@@ -10,6 +10,9 @@ patterns that we use on a day-to-day basis.
 
 # Index
 
+* Tooling
+  * [MacOS](tooling/macos.md)
+  * [Editors & Plugins](tooling/editors.md)
 * HTML & CSS
   * [Modals](html-css/modals.md)
 * Javascript
