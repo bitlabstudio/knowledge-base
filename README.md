@@ -10,6 +10,8 @@ patterns that we use on a day-to-day basis.
 
 # Index
 
+* Conventions
+  * [Project Folders](conventions/project-folders.md)
 * Tooling
   * [MacOS](tooling/macos.md)
   * [Editors & Plugins](tooling/editors.md)
