@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestCompont renders a different title 1`] = `
+<div>
+  <h1>
+    Different Title
+  </h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda consequuntur distinctio enim eos excepturi expedita fugiat impedit iure natus necessitatibus nemo nulla perferendis quia quis saepe, totam ut vel!
+  </p>
+</div>
+`;
+
+exports[`TestCompont renders the correct title 1`] = `
+<div>
+  <h1>
+    Foobar
+  </h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi assumenda consequuntur distinctio enim eos excepturi expedita fugiat impedit iure natus necessitatibus nemo nulla perferendis quia quis saepe, totam ut vel!
+  </p>
+</div>
+`;

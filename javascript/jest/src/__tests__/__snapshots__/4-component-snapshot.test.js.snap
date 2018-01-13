@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TestComponent renders the correct values 1`] = `
+<div>
+  <h1>
+    Test
+  </h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias amet asperiores at dicta, dolore doloremque doloribus enim magni nam nesciunt officia quod temporibus unde veritatis! Illo, laudantium, neque. Rerum?
+  </p>
+</div>
+`;
