@@ -24,7 +24,7 @@ patterns that we use on a day-to-day basis.
     * [Styling Components](javascript/react-js/styling-components.md)
     * [React Router](javascript/react-js/react-router.md)
     * [React Apollo](javascript/react-js/react-apollo.md)
-  * Jest (commented source files)
+  * Jest
     * [Introduction](javascript/jest/introduction.md)
     * [Simple Function](javascript/jest/1-simple-function.md)
     * [Redux Actions](javascript/jest/2-actions.md)
