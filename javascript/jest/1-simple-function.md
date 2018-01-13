@@ -6,9 +6,9 @@ Jest works with any simple JS funnction.
 const sum = (x1, x2) => x1 + x2
 ```
 
-Te tests are usually super readable.
-A single test case is defined with the `test` keyword.
-It takes 2 arguments. 1. a description and 2. the test callback
+Te tests are usually super readable.  
+A single test case is defined with the `test` keyword.  
+It takes 2 arguments. 1. a description and 2. the test callback.  
 
 ```ecmascript 6
 test('to add two integers correctly', () => {
@@ -17,7 +17,7 @@ test('to add two integers correctly', () => {
 ```
 
 `expect` always holds the function to test and then it's chained up with what it's supposed to match.
-Common for simple variable outputs is `toBe`.
+Common for simple variable outputs is `toBe`.  
 For objects and arrays you should resort to using `toEqual` as you will see in later chapters.
 
 For longer test cases with multiple scenarios you can bundle them up in the `describe` keyword.

@@ -3,7 +3,7 @@
 __Note: During our retreat we agreed upon NOT testing the connected components but instead only test the representional component that's wrapped by the redux connect function.  
 In case you might encounter any complex scenarios where you want to do it anyway, here's how it goes.__
 
-However one use case, we haven't discussed is that you can use this setup described below to test middlewares as well.
+However one use case, we haven't discussed is that you can use this setup described below to test middlewares as well.  
 Also if you have more complex async and chained actions, you can make sure that all actions are actually called by using the mock store's testing API.
 
 Please refer to the official [`redux-mock-store` documentation](http://arnaudbenard.com/redux-mock-store/) for complex test scenarios.

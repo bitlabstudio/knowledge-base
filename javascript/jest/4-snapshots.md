@@ -22,7 +22,7 @@ class TestComponent extends Component {
 }
 ```
 
-We can write a test that renders the component and writes the output into a snapshot file.
+We can write a test that renders the component and writes the output into a snapshot file.  
 Passing different props will alter the result and we can chain different variations to test different outcomes.
 
 ```jsx harmony
@@ -46,8 +46,8 @@ describe('TestCompont', () => {
 })
 ```
 
-For this we need `react-test-renderer` installed separately first.
-Then we can import its renderer and use it to create our rendered component
+For this we need `react-test-renderer` installed separately first.  
+Then we can import its renderer and use it to create our rendered component:
 
 ```jsx harmony
 const component = renderer.create(<TestComponent title='Foobar' />)
@@ -64,7 +64,7 @@ And finally we can compare it with the existing snapshot:
 expect(tree).toMatchSnapshot()
 ```
 
-As with other tests `expect` initiates the assertion and then we want it `toMatchSnapshot()`
+As with other tests `expect` initiates the assertion and then we want it `toMatchSnapshot()`  
 Calling `toMatchSnapshot` for the first time will always automatically create the initial snapshot.
 
 If you want to update the snapshots because they became outdated, you have to pass the `-u` flag.
